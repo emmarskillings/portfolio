@@ -1,11 +1,11 @@
 // import button from './button';
 // import input from './input';
-// import palette from './palette';
+import palette from './palette';
 // import popovers from './popovers';
 // import animations, { transition } from './animations';
 
 export default {
-  // ...palette,
+  ...palette,
   //
   // animations,
   // button,

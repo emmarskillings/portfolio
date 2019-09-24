@@ -5,6 +5,7 @@ import * as serviceWorker from './serviceWorker';
 
 import theme from './theme'
 import App from './App';
+import './index.css';
 
 const render = () => {
   ReactDOM.render(
