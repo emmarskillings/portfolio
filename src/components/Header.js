@@ -6,23 +6,30 @@ import palette from '../theme/palette';
 export default () => {
   return (
     <Header>
-      <div>Hello</div>
-        <div>&#x2630;</div>
+      <Title>Emma</Title>
+      <MenuIcon>&#x2630;</MenuIcon>
     </Header>
   )
 }
 
 
 const Header = styled.header`
-  background-color: ${palette.tertiary};
-  font-size: 1.2em;
+  font-size: 36px;
 
   display: flex;
   align-items: center;
   justify-content: space-between;
 
-  position: fixed;
+  position: absolute;
   top: 0;
   width: 100%;
-  min-height: 60px;
+  min-height: 100px;
+`;
+
+const Title = styled.div`
+  margin-left: 100px;
+`;
+
+const MenuIcon = styled.div`
+  margin-right: 100px;
 `;
