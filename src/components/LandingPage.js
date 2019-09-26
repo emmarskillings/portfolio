@@ -5,14 +5,12 @@ import Header from './Header';
 import NavMenu from './NavMenu';
 
 const LandingPage = () => {
-  const title = 'Landing Page'
+  const title = 'Landing Page';
   return (
     <React.Fragment>
       <Header />
-      <NavMenu/>
-      <div>HELLO</div>
     </React.Fragment>
   )
-}
+};
 
 export default LandingPage;

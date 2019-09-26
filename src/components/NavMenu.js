@@ -1,15 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import palette from "../theme/palette";
 
-const NavMenu = () => (
-  <NavWrapper>
+const NavMenu = (isVisible) => {
+  console.log(isVisible);
+  return (
+  <NavWrapper isVisible={isVisible}>
     <PageLink>Portfolio</PageLink>
     <PageLink>Journal</PageLink>
     <PageLink>About</PageLink>
   </NavWrapper>
-);
+)};
 
 export default NavMenu;
 
@@ -23,6 +25,10 @@ const NavWrapper = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+  ${props => props.isVisible === true && css`
+    visibility: hidden;
+  `}
 `;
 
 const PageLink = styled.div`

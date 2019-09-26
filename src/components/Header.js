@@ -2,13 +2,23 @@ import React from 'react';
 import styled from 'styled-components';
 
 import palette from '../theme/palette';
+import NavMenu from "./NavMenu";
 
 export default () => {
+  const [isVisible, setIsVisible] = React.useState(false);
+
+  const handleClick = () => {
+    setIsVisible(true);
+  };
+
   return (
-    <Header>
-      <Title>Emma</Title>
-      <MenuIcon>&#x2630;</MenuIcon>
-    </Header>
+    <React.Fragment>
+      <Header>
+        <Title>Emma</Title>
+        <MenuIcon onClick={handleClick}>&#x2630;</MenuIcon>
+      </Header>
+      <NavMenu isVisible={isVisible}/>
+    </React.Fragment>
   )
 }
 
@@ -30,6 +40,17 @@ const Title = styled.div`
   margin-left: 100px;
 `;
 
-const MenuIcon = styled.div`
+const MenuIcon = styled.button`
   margin-right: 100px;
+  border: none;
+  text-decoration: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 36px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  
+  &:focus {
+    outline: none;
+  }
 `;
