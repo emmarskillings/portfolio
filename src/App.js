@@ -11,17 +11,8 @@ import LandingPage from './components/LandingPage';
 
 export default () => (
   <Router>
-   <Wrapper>
-
-     <Switch>
-
+    <Switch>
       <Route exact path="/" component={LandingPage} />
-
-     </Switch>
-   </Wrapper>
+    </Switch>
  </Router>
 )
-
-const Wrapper = styled.div`
-  background-color: pink;
-`;

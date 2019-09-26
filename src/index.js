@@ -1,16 +1,27 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, createGlobalStyle } from 'styled-components';
 import * as serviceWorker from './serviceWorker';
 
 import theme from './theme'
 import App from './App';
-import './index.css';
+
+const GlobalStyle = createGlobalStyle`
+  @import url('https://fonts.googleapis.com/css?family=Poppins:400,400i,600,600i&display=swap');
+  body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background-color: ${theme.primary};
+  }
+`;
 
 const render = () => {
   ReactDOM.render(
     <ThemeProvider theme={theme}>
-      <App />
+      <React.Fragment>
+        <App />
+        <GlobalStyle />
+      </React.Fragment>
     </ThemeProvider>,
     document.getElementById('root'),
   );
