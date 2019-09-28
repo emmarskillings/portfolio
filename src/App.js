@@ -5,12 +5,16 @@ import {
   BrowserRouter as Router,
 } from 'react-router-dom';
 
-import LandingPage from './components/LandingPage';
+import Portfolio from './components/Portfolio';
+import Journal from './components/Journal';
+import About from './components/About';
 
 export default () => (
   <Router>
     <Switch>
-      <Route exact path="/" component={LandingPage} />
+      <Route exact path="/" component={Portfolio} />
+      <Route exact path="/journal/" component={Journal} />
+      <Route exact path="/about-me/" component={About} />
     </Switch>
  </Router>
 )

@@ -2,12 +2,13 @@ import React from 'react';
 
 import Header from './Header';
 
-const LandingPage = () => {
+const Portfolio = () => {
   return (
     <React.Fragment>
       <Header />
+      <div style={{marginTop: '100px'}}>hello</div>
     </React.Fragment>
   )
 };
 
-export default LandingPage;
+export default Portfolio;
