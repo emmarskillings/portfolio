@@ -1,7 +1,5 @@
 import * as React from 'react';
-import styled from 'styled-components';
 import {
-  Redirect,
   Route,
   Switch,
   BrowserRouter as Router,

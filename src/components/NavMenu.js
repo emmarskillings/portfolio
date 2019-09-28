@@ -3,31 +3,44 @@ import styled, { css } from 'styled-components';
 
 import palette from "../theme/palette";
 
-const NavMenu = (isVisible) => {
-  console.log(isVisible);
+const NavMenu = (props) => {
+  const { isVisible } = props;
   return (
-  <NavWrapper isVisible={isVisible}>
-    <PageLink>Portfolio</PageLink>
-    <PageLink>Journal</PageLink>
-    <PageLink>About</PageLink>
-  </NavWrapper>
-)};
+    <NavWrapper isVisible={isVisible}>
+      <PageLink>Portfolio</PageLink>
+      <PageLink>Journal</PageLink>
+      <PageLink>About</PageLink>
+    </NavWrapper>
+  );
+};
 
 export default NavMenu;
 
 const NavWrapper = styled.div`
   position: absolute;
-  height: 100%;
+  height: calc(100% - 100px);
+  height: -o-calc(100% - 100px);
+  height: -webkit-calc(100% - 100px);
+  height: -moz-calc(100% - 100px);
   width: 100%;
+  top: 100px;
+  left: 0;
   background-color: ${palette.primary};
-  opacity: 0.9;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  opacity: 0;
+  visibility: hidden;
   
-  ${props => props.isVisible === true && css`
-    visibility: hidden;
+  ${props => props.isVisible && css`
+    opacity: 0.9;
+    visibility: visible;
   `}
 `;
 
@@ -37,5 +50,5 @@ const PageLink = styled.div`
   text-align: center;
   display: block;
   position: relative;
-  margin: 20px 0;
+  margin-bottom: 40px;
 `;
