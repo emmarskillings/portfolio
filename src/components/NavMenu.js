@@ -1,15 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled, { css } from 'styled-components';
 
 import palette from "../theme/palette";
 
 const NavMenu = (props) => {
   const { isVisible } = props;
+
+  const location = window.location.pathname;
+
   return (
     <NavWrapper isVisible={isVisible}>
-      <PageLink>Portfolio</PageLink>
-      <PageLink>Journal</PageLink>
-      <PageLink>About</PageLink>
+      <PageLink to="/" location={location}>Portfolio</PageLink>
+      <PageLink to="/journal/" location={location}>Journal</PageLink>
+      <PageLink to="/about-me/" location={location}>About</PageLink>
     </NavWrapper>
   );
 };
@@ -39,16 +43,24 @@ const NavWrapper = styled.div`
   visibility: hidden;
   
   ${props => props.isVisible && css`
-    opacity: 0.9;
+    opacity: 1;
+    background: ${palette.fadedPrimary};
     visibility: visible;
   `}
 `;
 
-const PageLink = styled.div`
+const PageLink = styled(Link)`
   font-size: 36px;
   width: 800px;
   text-align: center;
   display: block;
   position: relative;
   margin-bottom: 40px;
+  text-decoration: none;
+  color: ${palette.text};
+  
+  ${props => props.to === props.location && css`
+    color: ${palette.accent1};
+  `}
+}
 `;

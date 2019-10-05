@@ -14,7 +14,7 @@ export default () => {
   return (
     <React.Fragment>
       <Header>
-        <Title>Emma</Title>
+        <Title>Modern Perennial</Title>
         <HamburgerMenu isVisible={isVisible} toggleNavMenu={toggleNavMenu} />
       </Header>
       <NavMenu isVisible={isVisible} toggleNavMenu={toggleNavMenu} />
