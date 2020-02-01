@@ -21,15 +21,14 @@ const NavMenu = (props) => {
 export default NavMenu;
 
 const NavWrapper = styled.div`
-  position: absolute;
-  height: calc(100% - 100px);
-  height: -o-calc(100% - 100px);
-  height: -webkit-calc(100% - 100px);
-  height: -moz-calc(100% - 100px);
+  position: fixed;
+  height: calc(100%);
+  height: -o-calc(100%);
+  height: -webkit-calc(100%);
+  height: -moz-calc(100%);
   width: 100%;
-  top: 100px;
+  top: 80px;
   left: 0;
-  background-color: ${palette.primary};
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -44,7 +43,7 @@ const NavWrapper = styled.div`
   
   ${props => props.isVisible && css`
     opacity: 1;
-    background: ${palette.fadedPrimary};
+    background: rgb(255, 255, 255, 0.9);
     visibility: visible;
   `}
 `;
@@ -57,10 +56,10 @@ const PageLink = styled(Link)`
   position: relative;
   margin-bottom: 40px;
   text-decoration: none;
-  color: ${palette.text};
+  color: black;
   
   ${props => props.to === props.location && css`
-    color: ${palette.accent1};
+    color: ${palette.tertiary};
   `}
 }
 `;

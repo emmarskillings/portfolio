@@ -4,12 +4,12 @@ import styled, { css } from 'styled-components';
 import palette from "../theme/palette";
 
 const LineOne = styled.span`
-  display:block;
+  display: block;
   width: 40px;
   height: 4px;
   background-color: ${palette.text};
   position: absolute;
-  left:0;
+  left: 0;
   transition: all 0.4s;
   -webkit-transition: all $transition-time;
   -moz-transition: all $transition-time;

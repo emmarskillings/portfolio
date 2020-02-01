@@ -14,8 +14,10 @@ export default () => {
   return (
     <React.Fragment>
       <Header>
-        <Title>Modern Perennial</Title>
+        <Wrapper>
+        Emma Skillings
         <HamburgerMenu isVisible={isVisible} toggleNavMenu={toggleNavMenu} />
+        </Wrapper>
       </Header>
       <NavMenu isVisible={isVisible} toggleNavMenu={toggleNavMenu} />
     </React.Fragment>
@@ -26,13 +28,22 @@ const Header = styled.header`
   font-size: 36px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  position: absolute;
+  position: fixed;
+  background-color: white;
   top: 0;
   width: 100%;
-  min-height: 100px;
+  min-height: 80px;
 `;
 
-const Title = styled.div`
-  margin-left: 8vw;
+const Wrapper = styled.div`
+  width: 85%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
+
+// const Title = styled.div`
+//   margin-left: 8vw;
+// `;
