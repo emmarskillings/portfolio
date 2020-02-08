@@ -2,8 +2,11 @@ import React from 'react';
 import styled from 'styled-components';
 
 import palette from "../../theme/palette";
+import ItemOverlay from "./ItemOverlay";
 
 const CardWrapper = ({ items, category }) => {
+  const [selectedItem, setSelectedItem] = React.useState(null);
+
   const filteredItems = [];
 
   items.forEach(item => {
@@ -13,23 +16,23 @@ const CardWrapper = ({ items, category }) => {
       filteredItems.push(item)
     }
   });
-  console.log(filteredItems)
 
   return (
     <Wrapper>
       {filteredItems.map(item => {
         if (item.images) {
           return (
-            <Card image={item.images[0]}>
+            <Card image={item.images[0]} location={item.location} onClick={() => setSelectedItem(item)} >
               <Description key={item.ordering} index={item.ordering}>{item.name}</Description>
             </Card>
           )
         }
         }
       )}
+      <ItemOverlay item={selectedItem} handleCloseOverlay={() => setSelectedItem(null)} />
     </Wrapper>
   );
-}
+};
 
 export default CardWrapper;
 

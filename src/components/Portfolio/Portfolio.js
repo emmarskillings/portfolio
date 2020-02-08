@@ -9,7 +9,7 @@ const Portfolio = () => {
   const [selectedCategory, setSelectedCategory] = React.useState(null);
 
   const handleSelectCategory = (event) => {
-    const value = event.currentTarget.textContent
+    const value = event.currentTarget.textContent;
 
     if (selectedCategory && selectedCategory === value)  {
       setSelectedCategory(null)
@@ -46,4 +46,5 @@ const Category = styled.div`
   line-height: 40px;
   margin: 20px 10px;
   border-bottom: ${props => props.value === props.isSelected ? '2px solid #A6A2A2': ''};
+  cursor: pointer;
 `;

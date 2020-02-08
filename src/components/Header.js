@@ -43,7 +43,3 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 `;
-
-// const Title = styled.div`
-//   margin-left: 8vw;
-// `;

@@ -7,9 +7,14 @@
       <change beforePath="$PROJECT_DIR$/src/components/NavMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/NavMenu.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Portfolio/CardWrapper.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio/CardWrapper.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/icons/hamburger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/icons/hamburger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/theme/palette.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/theme/palette.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Portfolio/PortfolioItems.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Portfolio/PortfolioItems.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/cardi_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/cardi_2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/clock.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/clock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/earrings.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/earrings.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/fortune.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/fortune.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/teacups.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/teacups.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/top.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/top.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/tote.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/tote.png" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,7 +75,8 @@
       <workItem from="1578716227665" duration="232000" />
       <workItem from="1579295247028" duration="580000" />
       <workItem from="1580096322084" duration="6000" />
-      <workItem from="1580096349653" duration="12156000" />
+      <workItem from="1580096349653" duration="20373000" />
+      <workItem from="1580861214309" duration="220000" />
     </task>
     <servers />
   </component>

@@ -22,10 +22,7 @@ export default NavMenu;
 
 const NavWrapper = styled.div`
   position: fixed;
-  height: calc(100%);
-  height: -o-calc(100%);
-  height: -webkit-calc(100%);
-  height: -moz-calc(100%);
+  height: 100%;
   width: 100%;
   top: 80px;
   left: 0;

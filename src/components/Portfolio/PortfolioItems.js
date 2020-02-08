@@ -38,16 +38,16 @@ export const items = [
     ordering: 3
   },
   {
+    name: 'Simplicity Mugs',
+    category: 'Ceramics',
+    images: [mugs1, mugs2],
+    ordering: 5,
+  },
+  {
     name: 'Yoke O\'Clock',
     category: 'Decoration',
     images: [clock],
     ordering: 4,
-  },
-  {
-    name: 'Simplici-tea',
-    category: 'Ceramics',
-    images: [mugs1, mugs2],
-    ordering: 5,
   },
   {
     name: 'Tea for Three',
